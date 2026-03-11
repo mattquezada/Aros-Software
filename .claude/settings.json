@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/matthewquezada/Aros-Software -maxdepth 2 -type f \\\\\\(-name *.json -o -name *.js -o -name *.ts -o -name *.tsx -o -name .env* -o -name next.config.* -o -name tsconfig.json \\\\\\))"
+    ]
+  }
+}

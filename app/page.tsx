@@ -2,6 +2,24 @@ import Link from 'next/link';
 import Logo from '@/components/Logo';
 import styles from './page.module.css';
 
+const testimonials = [
+  {
+    quote: "Aros Software completely transformed our online presence. The new site is fast, beautiful, and our customers constantly compliment how easy it is to browse the menu and place orders.",
+    name: "Amia R.",
+    role: "Owner, Amia's Bakery",
+  },
+  {
+    quote: "Working with Aros Software was seamless from start to finish. They built exactly what I envisioned — a professional site that generates real leads and reflects the quality of my brand.",
+    name: "Logan Corral",
+    role: "Realtor, Premier Real Estate",
+  },
+  {
+    quote: "The Voltforge landing page exceeded every expectation. Clean design, lightning-fast load times, and it was delivered ahead of schedule. Highly recommend.",
+    name: "Chris V.",
+    role: "Founder, Voltforge",
+  },
+];
+
 const services = [
   {
     title: 'Custom Websites',
@@ -71,6 +89,28 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className={`section ${styles.testimonials}`}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <span className={styles.sectionLabel}>Client Stories</span>
+            <h2 className={styles.sectionTitle}>What our clients say</h2>
+          </div>
+          <div className={styles.testimonialsGrid}>
+            {testimonials.map(({ quote, name, role }) => (
+              <figure key={name} className={styles.testimonialCard}>
+                <span className={styles.testimonialQuoteMark} aria-hidden="true">&ldquo;</span>
+                <blockquote className={styles.testimonialQuote}>{quote}</blockquote>
+                <figcaption className={styles.testimonialAuthor}>
+                  <span className={styles.testimonialName}>{name}</span>
+                  <span className={styles.testimonialRole}>{role}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
 

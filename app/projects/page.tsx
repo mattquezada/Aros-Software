@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    name: "Amia's Bakery",
+    name: "Amias Bakery",
     description: "A warm, inviting website for a local artisan bakery. Features an online menu, custom photography integration, and contact forms to handle orders and inquiries.",
     domain: "amiasbakery.com",
     url: "https://amiasbakery.com",
