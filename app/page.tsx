@@ -5,18 +5,13 @@ import styles from './page.module.css';
 const testimonials = [
   {
     quote: "Aros Software completely transformed our online presence. The new site is fast, beautiful, and our customers constantly compliment how easy it is to browse the menu and place orders.",
-    name: "Amia R.",
-    role: "Owner, Amia's Bakery",
+    name: "Catherine Estrada",
+    role: "Owner, Amias Bakery",
   },
   {
     quote: "Working with Aros Software was seamless from start to finish. They built exactly what I envisioned — a professional site that generates real leads and reflects the quality of my brand.",
     name: "Logan Corral",
     role: "Realtor, Premier Real Estate",
-  },
-  {
-    quote: "The Voltforge landing page exceeded every expectation. Clean design, lightning-fast load times, and it was delivered ahead of schedule. Highly recommend.",
-    name: "Chris V.",
-    role: "Founder, Voltforge",
   },
 ];
 
