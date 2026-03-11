@@ -1,0 +1,61 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  user-select: none;
+}
+
+.icon {
+  color: var(--color-accent);
+  font-weight: 800;
+  font-family: var(--font-sans);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border-left: 1px solid var(--color-border);
+  padding-left: 14px;
+}
+
+.name {
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.sub {
+  letter-spacing: 0.3em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Sizes */
+.sm .icon  { font-size: 1.1rem; }
+.sm .name  { font-size: 0.9rem; }
+.sm .sub   { font-size: 0.45rem; }
+.sm .wordmark { gap: 2px; padding-left: 10px; }
+
+.md .icon  { font-size: 1.4rem; }
+.md .name  { font-size: 1.1rem; }
+.md .sub   { font-size: 0.5rem; }
+
+.lg .icon  { font-size: 2rem; }
+.lg .name  { font-size: 1.6rem; }
+.lg .sub   { font-size: 0.6rem; }
+.lg .wordmark { gap: 3px; padding-left: 18px; }
+
+.xl .icon  { font-size: 3.2rem; }
+.xl .name  { font-size: 2.6rem; }
+.xl .sub   { font-size: 0.75rem; }
+.xl .wordmark { gap: 4px; padding-left: 22px; }
